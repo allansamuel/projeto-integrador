@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Barack Pergunta</string>
+    <string name="acesse_sua_conta">Acesse sua conta, aluno(a) do IF!</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_calendario">Calendário</string>
+    <string name="title_perfil">Perfil</string>
+    <string name="title_pesquisar">Pesquisar</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="nome">Nome</string>
+    <string name="confirmar_senha">Confirme sua senha</string>
+    <string name="confirmar_cadastro">Confirmar cadastro</string>
+    <string name="erro_email_invalido">Insira um email válido.</string>
+    <string name="erro_conexao">Desculpe, problema na conexão :(</string>
+    <string name="erro_senhas_diferentes">Suas senhas não combinam.</string>
+    <string name="erro_valores_invalidos">Insira valores válidos nos campos.</string>
+    <string name="erro_email_senha_errados">Seu nome ou senha estão incorretos</string>
+    <string name="erro_nome_invalido">Insira um nome válido (letras e espaços)</string>
+    <string name="erro_senha_pequena">Insira uma senha com 4 caracteres ou mais.</string>
+    <string name="erro_email_ja_existe">Esse email já foi cadastrado.\nFaça login, ou escolha outro.</string>
+    <string name="erro_senha_errada">Ei, tem certeza que essa é sua senha?</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="entrar">Entrar</string>
+    <string name="editar_perfil">Editar \nPerfil</string>
+    <string name="logoff">Sair</string>
+    <string name="apagar_perfil">Excluir conta</string>
+    <string name="erro_em_breve">Em breve...</string>
+    <string name="carregando">Carregando...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

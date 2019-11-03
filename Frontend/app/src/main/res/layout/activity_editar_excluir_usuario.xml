@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarExcluirUsuarioActivity"
+    android:background="@drawable/gradient_background">
+
+    <View
+        android:id="@+id/view"
+
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="50dp"
+        android:alpha="0.50"
+        android:background="@drawable/shape_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <ImageView
+        android:id="@+id/iv_perfil"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape_circle"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/iv_dog_perfil"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+
+        android:background="@drawable/ic_dog_perfil"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_perfil"
+        app:layout_constraintEnd_toEndOf="@+id/iv_perfil"
+        app:layout_constraintStart_toStartOf="@+id/iv_perfil"
+        app:layout_constraintTop_toTopOf="@+id/iv_perfil" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bt_perfil"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_camera_white"
+        app:fabCustomSize="30dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_dog_perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_dog_perfil"
+        app:layout_constraintVertical_bias="1.0"
+        app:maxImageSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_aviso"
+        android:layout_width="252dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="Altere os valores abaixo para \neditar seu perfil"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#d3626e"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/iv_dog_perfil" />
+
+    <EditText
+        android:id="@+id/et_nome"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#d3626e"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="textPersonName"
+        android:textColorHint="#d3626e"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/tv_aviso" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#d3626e"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#d3626e"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/et_nome" />
+
+    <EditText
+        android:id="@+id/et_senha"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#d3626e"
+        android:ems="10"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:textColorHint="#d3626e"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    <EditText
+        android:id="@+id/et_confirma_senha"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#d3626e"
+        android:ems="10"
+        android:hint="@string/confirmar_senha"
+        android:inputType="textPassword"
+        android:textColorHint="#d3626e"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/et_senha" />
+
+    <Button
+        android:id="@+id/bt_cadastro_sombra3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.8"
+        android:background="@drawable/shape_button"
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="multiply"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/et_confirma_senha"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/bt_editar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="120dp"
+        android:layout_height="43dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/editar_perfil"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_cadastro_sombra3"
+        app:layout_constraintEnd_toEndOf="@+id/bt_cadastro_sombra3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bt_cadastro_sombra3"
+        app:layout_constraintTop_toTopOf="@+id/bt_cadastro_sombra3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bt_cadastro_sombra4"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.8"
+        android:background="@drawable/shape_button"
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="multiply"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bt_cadastro_sombra3"
+        app:layout_constraintTop_toBottomOf="@+id/et_confirma_senha"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/bt_logoff"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="120dp"
+        android:layout_height="43dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/logoff"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_cadastro_sombra4"
+        app:layout_constraintEnd_toEndOf="@+id/bt_cadastro_sombra4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bt_cadastro_sombra4"
+        app:layout_constraintTop_toTopOf="@+id/bt_cadastro_sombra4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bt_excluir"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/apagar_perfil"
+        android:textSize="12sp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/et_confirma_senha"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

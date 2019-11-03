@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_perfil"
+        android:icon="@drawable/ic_dog_perfil"
+        android:title="@string/title_perfil" />
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_calendario"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/title_calendario" />
+
+    <item
+        android:id="@+id/navigation_pesquisar"
+        android:icon="@drawable/ic_pesquisar_post"
+        android:title="@string/title_pesquisar" />
+</menu>
